@@ -155,19 +155,42 @@ body {
 
 .hellotext h2 {
     font-size: 270%;
+    color: #555555;
 }
 
 .hellotext p {
     margin-top: -20px;
     font-size: 20px;
+    color: #555555;
 }
 
-/* @media screen and (max-width: 1200px) {
+@media screen and (max-width: 640px) {
     .hellotext h2 {
-        font-size: 20px;
+        font-size: 220%;
     }
 
-  } */
+    .hellotext {
+        margin-left: 10%;
+        margin-bottom: 30px;
+    }
+
+  }
+
+  @media screen and (max-width: 312px) {
+    .hellotext h2 {
+        font-size: 180%;
+    }
+
+    .hellotext p {
+        font-size: 15px;
+    }
+
+    .hellotext {
+        margin-left: 10%;
+        margin-bottom: 30px;
+    }
+
+  }
 
 .underHead {
     width: 100%;
