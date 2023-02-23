@@ -19,6 +19,7 @@ body {
     align-items: center;
     /* font-family: 'Work Sans', sans-serif; */
     font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
 
 }
 
@@ -48,66 +49,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-
-.navbar {
-    /* border: 2px solid peru; */
-    width: 100%;
-    height: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    overflow: hidden;
-    z-index: 999;
-}
-
-
-.options {
-    height: 100%;
-    margin-right: 20px;
-    /* border: 2px solid peru; */
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-items: center;
-    width: auto;
-    padding-left: 30px;
-}
-
-.options a{
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-image: url("img/blob-haikei.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    margin-right: 30px;
-    width: 100px;
-    height: 80%;
-    letter-spacing: 2px;
-    /* border: 2px solid peru; */
-
-}
-
-.options a:hover{
-    transform: scale(1.1);
-    animation-name: ani-float;
-    animation-duration: 1.2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; 
-}
-
-@keyframes ani-float {
-    0% { transform: translate(0,  0px); scale: 1; }
-    50% { transform: translate(0, 6px); scale: 0.98;}
-    100% { transform: translate(0, 0px); scale: 1;}    
-  }
 
 .liSize {
     width: 200px;
@@ -159,10 +100,12 @@ body {
 }
 
 .hellotext p {
-    margin-top: -20px;
+    margin-top: -10px;
     font-size: 20px;
     color: #555555;
+    letter-spacing: 10px;
 }
+
 
 @media screen and (max-width: 640px) {
     .hellotext h2 {
@@ -217,7 +160,7 @@ body {
 }
 
 
-/* //////////////// Contact form ///////////////////////// */
+/* /////////////////////////////////// Contact form //////////////////////////////////////////// */
 
 .container {
     width: 100%;
@@ -233,21 +176,46 @@ body {
 .container h3{
     color: #555;
     font-weight: 800;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 0px;
     margin-left: 10%;
+    letter-spacing: 10px;
 }
 
+
+.contactContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: solid 2px peru; */
+
+}
 
 .contactPics {
-    max-width: 600px;
-    width: 90%;
-    height: 200px;
+    width: 100%;
+    max-height: 500px;
+    height: 90%;
     /* border: solid 2px peru; */
-    margin: 20px;
+    margin-left: 10%;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
+.contactPics p {
+    color: #555;
+    font-weight: 800;
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 100px;
+    line-height: 1.9rem;
+    letter-spacing: 2px;
+}
 
 .icons {
     text-decoration: none;
@@ -255,7 +223,6 @@ body {
     align-items: center;
     justify-content: center;
     /* border: 2px solid peru; */
-    max-width: 100%;
     height: auto;
 }
 
@@ -310,20 +277,6 @@ body {
 
 
 
-
-
-.contactContainer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    /* border: solid 2px peru; */
-
-}
-
-
 form {
     /* background: #fff; */
     display: flex;
@@ -346,6 +299,7 @@ form input, form textarea {
     background: #f5f5f5;
     font-size: 16px;
     border-radius: 10px;
+    letter-spacing: 2px;
 
 }
 
@@ -389,7 +343,40 @@ form button:active {
 
 
 
+@media screen and (max-width: 700px) {
+    .contactContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    .contactPics {
+        /* border: solid 2px peru; */
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .container h3{
+        margin-left: 20px;
+        margin-bottom: 10px;
+        /* border: solid 2px peru; */
+        width: 90%;
 
+    }
+    .contactPics p {
+        color: #555;
+        font-weight: 800;
+        font-size: 20px;
+        width: 90%;
+        margin-bottom: 60px;
+        line-height: 1.9rem;
+        letter-spacing: 2px;
+    }
+    
+    .icons {
+        margin-bottom: 20px;
+    }
+
+  }
 
 
 
