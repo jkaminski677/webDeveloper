@@ -58,7 +58,7 @@ function checkForm() {
     } 
 
     
-    if(tel.length != 0 && tel.length < 9 && isNaN(tel)){
+    if(tel.length > 0 && tel.length < 9 || isNaN(tel)){
         document.getElementById("validPhone").style.display = "block";
     } else {
         document.getElementById("validPhone").style.display = "none";

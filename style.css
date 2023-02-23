@@ -352,28 +352,38 @@ form button:active {
     }
     .contactPics {
         /* border: solid 2px peru; */
-        margin-left: 20px;
+        margin-left: 40px;
         margin-top: 20px;
     }
     .container h3{
-        margin-left: 20px;
+        margin-left: 25px;
         margin-bottom: 10px;
         /* border: solid 2px peru; */
         width: 90%;
 
     }
     .contactPics p {
-        color: #555;
-        font-weight: 800;
         font-size: 20px;
         width: 90%;
         margin-bottom: 60px;
-        line-height: 1.9rem;
-        letter-spacing: 2px;
     }
     
     .icons {
+        margin-left: -10px;
         margin-bottom: 20px;
+        /* border: 2px solid peru; */
+    }
+
+    form {
+        /* background: #fff; */
+        display: flex;
+        flex-direction: column;
+        padding: 2vw 4vw;
+        width: 90%;
+        max-width: 700px;
+        border-radius: 10px;
+        z-index: 10;
+        margin-left: 0px;
     }
 
   }
