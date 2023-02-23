@@ -3,7 +3,11 @@
 
 .area{
     position: relative;
-    background: #fcfef4;  
+    /* background: #fcfef4;   */
+    /* background: #ffeeea;   */
+    background: linear-gradient(217deg, #fff2d4, #dfd7d5 70.71%),
+            linear-gradient(127deg, #fbf5d0, #dbc2bc 70.71%),
+            linear-gradient(336deg, #ffd4cc, #ffc7b0 70.71%);
     width: 100%;
     height: 100%;
     overflow: hidden;

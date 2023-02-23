@@ -1,3 +1,5 @@
+<!-- Do wysyłania wiadomości został wykorzystany serwis https://www.emailjs.com/ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,6 +21,15 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styleBackground.css" />
     <link rel="stylesheet" href="styleNavbar.css" />
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("h43oaYPXnVHCb5dTY");
+      })();
+    </script>
 
   </head>
 <body>
@@ -65,16 +76,6 @@
 
 
     </ul>
-    <!-- <div class="navbar">
-      <div class="logo flexDisp">
-      </div>
-      <div class="options">
-          <a href="#">Start</a>
-          <a href="#">O mnie</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Kontakt</a>
-      </div>
-    </div> -->
     <label>
       <input class="inpBut" type="checkbox">
       <span class="menu"> <span class="hamburger"></span> </span>
@@ -93,22 +94,75 @@
           </div>
       </div>
     </div>
-    <div class="underHead">
+    <!-- <div class="underHead">
         <div class="SibUnder flexDisp">fjh</div>
         <div class="SibUnder flexDisp">fghj</div>
+    </div> -->
+    <!-- <div class="underHead">
+      <div class="SibUnder flexDisp">fjh</div>
+      <div class="SibUnder flexDisp">fghj</div>
     </div>
     <div class="underHead">
       <div class="SibUnder flexDisp">fjh</div>
       <div class="SibUnder flexDisp">fghj</div>
-  </div>
-  <div class="underHead">
-    <div class="SibUnder flexDisp">fjh</div>
-    <div class="SibUnder flexDisp">fghj</div>
-</div>
-  </div>
+    </div> -->
+
+    <div class="container">
+      <h3>Zapraszam do kontaktu</h3>
+      <div class="contactContainer">
+        <div class="contactPics">
+          <p>Jeśli zainteresowało Cię to co robię i chciałbyś dowiedzieć 
+            się więcej to zadzwoń albo napisz do mnie, a ja skontaktuję się z Tobą! :) </p>
+          <div class="icons">
+            <a href="#"
+              ><img class="facebok_icon" src="img/icons8-facebook-144.png"
+            /></a>
+            <a href="https://github.com/jkaminski677" target="_blank"
+              ><img class="github_icon" src="img/icons8-github-240.png"
+            /></a>
+            <div
+              class="badge-base LI-profile-badge"
+              data-locale="pl_PL"
+              data-size="medium"
+              data-theme="dark"
+              data-type="VERTICAL"
+              data-vanity="jan-kamiński-82a707205"
+              data-version="v1"
+            >
+              <a
+                class="badge-base__link LI-simple-link"
+                href="https://pl.linkedin.com/in/jan-kami%C5%84ski-82a707205?trk=profile-badge"
+                target="_blank"
+                ><img class="linkedin_icon" src="img/icons8-linkedin-500.png"
+              /></a>
+            </div>
+      
+            
+          </div>
+        </div>
+        <form action="">
+          <!-- <h3>Zapraszam do kontaktu</h3> -->
+          <input type="text" id="name" placeholder="Imię" >
+          <p id="validName" class="validInputData">Pole "Imię" jest puste :(</p>
+          <input type="email" id="email" placeholder="Email" >
+          <p id="validMail" class="validInputData">Adres e-mail jest nie prawidłowy :(</p>
+          <input type="text" id="phone" placeholder="Numer telefonu" >
+          <p id="validPhone" class="validInputData">Numer telefonu jest nie prawidłowy :(</p>
+          <textarea id="message" rows="4" placeholder="W czym mogę pomóc?" ></textarea>
+          <p id="validMessage" class="validInputData">Wiadomość jest pusta :(</p>
+          <p id="messageSend" class="messageSend">Wiadomość została wysłana! :)</p>
+          <button  type='button' onclick="checkForm()">Wyślij</button>
+        </form>
+
+      </div>
+      
+    </div>
+    
 
 
+    
+
+  </div>
   <script src="script.js"></script>
-
 </body>
 </html>
