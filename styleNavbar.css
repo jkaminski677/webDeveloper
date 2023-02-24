@@ -67,11 +67,6 @@
     }
     
 
-    .inpBut {
-        display: none;
-    }
-
-
 }
 
 
@@ -136,7 +131,7 @@
     }
 
     label input:checked + .menu .hamburger:after {
-    -webkit-transform: rotate(90deg);
+    -webkit-transform: rotate(0deg);
     transform: rotate(90deg);
     bottom: 0;
     
@@ -149,21 +144,24 @@
     
     }
 
-    label input:checked + .menu + ul { opacity: 1; }
+    label input:checked + .menu + ul { 
+        display: block; 
+        opacity: 1;     
+    }
 
     label ul {
     z-index: 200;
     position: fixed;
-    top: 20%;
+    top: 40%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    opacity: 0;
     -webkit-transition: .25s 0s ease-in-out;
     transition: .25s 0s ease-in-out;
     font-size: 1.6em;
-    line-height: 1.
-    26;
+    line-height: 1.26;
+    display: none;
+    opacity: 0;
     }
 
     label a {
@@ -174,14 +172,5 @@
     
     }
 
-    h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 80%;
-    text-align: center;
-    }
 
 }

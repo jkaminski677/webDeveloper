@@ -443,7 +443,7 @@ body {
     .woicon {
         width: 44px;
         /* border: 2px solid peru; */
-        animation: float 3s 0.3s infinite ease-in-out;
+        animation: float 3s 0.7s infinite ease-in-out;
         top: -50px;
         left: -190px;
         opacity: 0.8;
