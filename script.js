@@ -151,6 +151,6 @@ function changeClass() {
 function leftSlide() {
     for(i=0; i< 2000; i++)
     {
-        box1.style.left += i;
+        box1.style.left += i/3;
     }
 }

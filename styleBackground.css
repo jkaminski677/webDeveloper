@@ -398,7 +398,7 @@
     --animation-Y: 0; 
 }
 
-@keyframes animate {
+/* @keyframes animate {
 
     0%{
         transform: translateY(var(--animation-Y)) translateX(var(--animation-X)) rotate(0deg);
@@ -420,7 +420,7 @@
         border-radius: 30%;
     }
 
-}
+} */
 
 
 /* /////////////////////////////   END Animated background /////////////////////////////// */
