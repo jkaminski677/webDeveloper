@@ -141,8 +141,16 @@ let interval = setInterval(() => {
 
 function changeClass() {
     // box1.firstElementChild.classList.remove("inner2");
-    box1.firstElementChild.classList.add("w3-animate-left");
-    box1.style.opacity = "1"
+    // box1.firstElementChild.classList.add("w3-animate-left");
+    // box1.style.opacity = "1"
+    leftSlide();
     console.log("Powinno być")
     clearInterval(interval);
+}
+
+function leftSlide() {
+    for(i=0; i< 2000; i++)
+    {
+        box1.style.left += i;
+    }
 }
