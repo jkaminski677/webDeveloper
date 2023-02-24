@@ -18,7 +18,7 @@ function containsSpecialChars(str) {
 
 
 function checkForm() {
-    nam = document.getElementById("name").value;
+    nam = document.getElementById("Name").value;
     tel = document.getElementById("phone").value;
     mail = document.getElementById("email").value;
     mes = document.getElementById("message").value;
@@ -69,33 +69,61 @@ function checkForm() {
         // sendMail();
         document.getElementById("messageSend").style.display = "block"
         console.log("Wysłano!")
-        console.log(numerator)
+        // console.log(numerator)
 
     }
     
 }
 
 
-function sendMail() {
-    var params = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        phone: document.getElementById("phone").value,
-        message: document.getElementById("message").value
-    };
-    const serviceID = "service_mtln5ab";
-    const templateID = "template_0836kc3";
+// Wysyłąnie maili za pomocą https://www.emailjs.com/
+// function sendMail() {
+//     var params = {
+//         name: document.getElementById("Name").value,
+//         email: document.getElementById("email").value,
+//         phone: document.getElementById("phone").value,
+//         message: document.getElementById("message").value
+//     };
+//     const serviceID = "service_mtln5ab";
+//     const templateID = "template_0836kc3";
 
-    emailjs.send(serviceID, templateID, params)
-    .then(
-        res=>{
-            document.getElementById("name").value = '';
-            document.getElementById("email").value = '';
-            document.getElementById("phone").value = '';
-            document.getElementById("message").value = '';
-            console.log(res);
-            document.getElementById("messageSend").style.display = "block"
-            // alert("Wiadomość została wysłana!");
-        })
-        .catch(err=>console.log(err));
-}
+//     emailjs.send(serviceID, templateID, params)
+//     .then(
+//         res=>{
+//             document.getElementById("Name").value = '';
+//             document.getElementById("email").value = '';
+//             document.getElementById("phone").value = '';
+//             document.getElementById("message").value = '';
+//             console.log(res);
+//             document.getElementById("messageSend").style.display = "block"
+//             // alert("Wiadomość została wysłana!");
+//         })
+//         .catch(err=>console.log(err));
+// }
+
+
+//  Wysyłanie maili za pomocą smptjs.com
+// function sendMail(){
+//     let ebody = `
+//     <b>Name: </b>${Name.value}
+//     <br>
+//     <b>Email: </b>${email.value}
+//     <br>
+//     <b>Phone: </b>${phone.value}
+//     <br>
+//     <br>
+//     <b>Message:</b>${message.value}
+//     `
+//     const sub = "smtp.js webDeveloper - "
+
+//     Email.send({
+//         SecureToken : "602e71cf-de3c-4a73-a18a-21bf392e8bf8",
+//         To : 'wladekskaj17@gmail.com',
+//         From : "wladekskaj17@gmail.com",
+//         Subject : sub + email.value,
+//         Body : ebody
+//     }).then(
+//       message => console.log(message)
+//     );
+
+// }

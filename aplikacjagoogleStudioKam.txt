@@ -1,0 +1,12 @@
+nldpzicfkovhapoz
+
+SMTPjs
+
+username: wladekskaj17@gmail.com
+pass: 62B156C37BE47A14025E7642B1472AA75D1E
+
+server: smtp.elasticemail.com
+Port: 2525
+
+
+securitytoken: 602e71cf-de3c-4a73-a18a-21bf392e8bf8
