@@ -129,29 +129,26 @@ function checkForm() {
 
 // }
 
-
+let box0 = document.querySelector("#InstartTitle");
 let box1 = document.querySelector("#StartClass");
+let box2 = document.querySelector("#SibUnder");
 
 // setInterval(function() { console.log(box1.getBoundingClientRect().top)}, 500);
 
-let interval = setInterval(() => {
-    box1.getBoundingClientRect().top <= 300 ? changeClass() : null
-    console.log(box1.getBoundingClientRect().top)
-    
+let interval0 = setInterval(() => {
+    box1.getBoundingClientRect().top >= -1 ? changeClass0() : null
+    // console.log(box1.getBoundingClientRect().top)
 }, 400);
+
+function changeClass0() {box0.style.opacity = "1"; box2.style.opacity="1";clearInterval(interval0);}
+
+let interval = setInterval(() => {box1.getBoundingClientRect().top <= 500 ? changeClass() : null}, 400);
 
 function changeClass() {
     // box1.firstElementChild.classList.remove("inner2");
     box1.firstElementChild.classList.add("w3-animate-left");
-    box1.style.opacity = "1"
-    // leftSlide();
-    console.log("Powinno być")
+    box1.style.opacity = "1";
+    console.log("Powinno być");
     clearInterval(interval);
 }
 
-// function leftSlide() {
-//     for(i=0; i< 2000; i++)
-//     {
-//         box1.style.left += i/3;
-//     }
-// }

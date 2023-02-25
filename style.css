@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 
+:root {
+    --Tekst-color: #555555; 
+
+}
+
 
 body {
     /* background-image: url("img/circle-scatter-haikei1.svg"); */
@@ -21,6 +26,7 @@ body {
     /* font-family: 'Work Sans', sans-serif; */
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
+    color: var(--Tekst-color);
 
 }
 
@@ -58,10 +64,6 @@ body {
     align-items: center;
 }
 
-.liSize {
-    width: 200px;
-    border: 2px solid peru;
-}
 
 .HelloHeader {
     width: 100%;
@@ -114,16 +116,37 @@ body {
     letter-spacing: 10px;
 }
 
+@media screen and (max-width: 1020px) {
+    .hellotext {
+        margin-left: 12%;
+        margin-bottom: 30px;
+    }
+  }
 
 @media screen and (max-width: 640px) {
     .hellotext h2 {
         font-size: 220%;
     }
 
+    .hellotext p{
+        margin-top: -20px;
+    }
+
+  }
+
+  @media screen and (max-width: 490px) {
+    .hellotext h2 {
+        font-size: 200%;
+    }
+    .hellotext p{
+        font-size: 14px;
+        letter-spacing: 8px;
+    }
     .hellotext {
-        margin-left: 10%;
+        margin-left: 13%;
         margin-bottom: 30px;
     }
+
 
   }
 
@@ -178,7 +201,16 @@ body {
 
 .w3-animate-left{
     position: relative;
-    animation: animateleft 1.9s cubic-bezier(0, 0, 0.15, 0.91)
+    animation: animateleft 1.1s ease-out;
+}
+
+.w3-animate-left-delay{
+    position: relative;
+    animation: animateleft 1.3s 0.2s ease-out;
+}
+.w3-animate-left-delay2{
+    position: relative;
+    animation: animateleft 1.4s 0.5s ease-out;
 }
     
 @keyframes animateleft
@@ -187,28 +219,25 @@ body {
     to{left:0;opacity:1}
 }
 
-.inner {
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 0%; */
-    /* transform: translateX(110%); */
-    /* margin-left: 0; */
+.w3-animate-right{
+    position:relative;
+    animation:animateright 0.4s
 }
-
-.inner2 {
-    /* margin-left: -150%; */
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: -50%; */
-    /* transform: translateX(-80%); */
-    /* opacity: 0; */
-
+.w3-animate-right-delay{
+    position:relative;
+    animation:animateright 1.9s 0.7s ease-out;
+}
+@keyframes animateright
+{
+    from {right:-800px;opacity:0} 
+    to{right:0;opacity:1}
 }
 
 
 .instartTitle {
     /* border: 2px solid peru; */
     width: 80%;
+    opacity: 0;
 }
 
 .instartdown{
@@ -230,9 +259,13 @@ body {
     z-index: 1;
 }
 
+#SibUnder {
+    opacity: 0;
+}
+
 
 .leftinstartdown {
-    border: 2px solid peru;
+    /* border: 2px solid p/eru; */
     /* margin: 0px; */
 }
 
@@ -243,6 +276,7 @@ body {
 .transIcons{
     opacity: 0.6;
     transition: 0.6s ease all;
+    filter: invert(50%) sepia(51%) saturate(551%) hue-rotate(325deg) brightness(101%) contrast(86%);
 }
 
 .transIcons:hover {
@@ -251,7 +285,6 @@ body {
 
 .gdicon {
     /* transform: perspective(800px) rotateY(27deg) scale(0.9) rotateX(8deg); */
-    filter: invert(50%) sepia(51%) saturate(551%) hue-rotate(325deg) brightness(101%) contrast(86%);
     width: 264px;
     /* border: 2px solid peru; */
     /* box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 70px -18px; */
@@ -265,7 +298,6 @@ body {
 
 .anicon {
     /* transform: perspective(800px) rotateY(30deg) scale(0.9) rotateX(8deg); */
-    filter: invert(50%) sepia(51%) saturate(551%) hue-rotate(325deg) brightness(101%) contrast(86%);
     width: 94px;
     box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 30px -18px;
     animation-name: float;
@@ -282,7 +314,6 @@ body {
 
 .picicon {
     /* transform: perspective(800px) rotateY(34deg) scale(0.9) rotateX(9deg); */
-    filter: invert(50%) sepia(51%) saturate(551%) hue-rotate(325deg) brightness(101%) contrast(86%);
     width: 84px;
     box-shadow: rgba(0, 0, 0, 0.25) -15px 15px 30px -8px;
     /* border: 2px solid rgb(255, 151, 151); */
@@ -296,7 +327,6 @@ body {
 
 .smicon {
     /* transform: perspective(800px) rotateY(32deg) scale(0.9) rotateX(9deg); */
-    filter: invert(50%) sepia(51%) saturate(551%) hue-rotate(325deg) brightness(101%) contrast(86%);
     width: 84px;
     box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 30px -22px;
     /* border: 2px solid peru; */
@@ -313,7 +343,6 @@ body {
 
 .chicon {
     /* transform: perspective(800px) rotateY(32deg) scale(0.9) rotateX(9deg); */
-    filter: invert(50%) sepia(51%) saturate(551%) hue-rotate(325deg) brightness(101%) contrast(86%);
     width: 64px;
     /* border: 2px solid peru; */
     animation: float 3s 0.7s infinite ease-in-out;
@@ -325,7 +354,6 @@ body {
 
 .bcicon {
     /* transform: perspective(800px) rotateY(32deg) scale(0.9) rotateX(9deg); */
-    filter: invert(50%) sepia(51%) saturate(551%) hue-rotate(325deg) brightness(101%) contrast(86%);
     width: 50px;
     box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 30px -22px;
     /* border: 2px solid peru; */
@@ -340,7 +368,6 @@ body {
 
 .scicon {
     /* transform: perspective(800px) rotateY(32deg) scale(0.9) rotateX(9deg); */
-    filter: invert(50%) sepia(51%) saturate(551%) hue-rotate(325deg) brightness(101%) contrast(86%);
     width: 110px;
     box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 30px -22px;
     /* border: 2px solid peru; */
@@ -355,7 +382,6 @@ body {
 
 .busicon{ 
     /* transform: perspective(800px) rotateY(32deg) scale(0.9) rotateX(9deg); */
-    filter: invert(50%) sepia(51%) saturate(551%) hue-rotate(325deg) brightness(101%) contrast(86%);
     width: 70px;
     box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 30px -22px;
     /* border: 2px solid peru; */
@@ -371,7 +397,6 @@ body {
 
 .woicon {
     /* transform: perspective(800px) rotateY(32deg) scale(0.9) rotateX(9deg); */
-    filter: invert(50%) sepia(51%) saturate(551%) hue-rotate(325deg) brightness(101%) contrast(86%);
     width: 74px;
     /* border: 2px solid peru; */
     box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 30px -22px;
