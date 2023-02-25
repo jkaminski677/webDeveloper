@@ -43,7 +43,7 @@
 }
 
 
-.circles li:nth-child(2){
+/* .circles li:nth-child(2){
     opacity: 0;
     top: 52%;
     left: 10%;
@@ -51,7 +51,7 @@
     height: 20px;
     animation-delay: 2s;
     animation-duration: 12s;
-}
+} */
 
 .circles li:nth-child(3){
     opacity: 0;
@@ -124,7 +124,7 @@
     animation-duration: 20s;
 }
 
-.circles li:nth-child(11){
+/* .circles li:nth-child(11){
     opacity: 0;
     left: 12%;
     top: 30%;
@@ -182,7 +182,7 @@
     height: 120px;
     animation-delay: 5s;
     animation-duration: 22s;
-}
+} */
 
 .circles li:nth-child(17){
     opacity: 0;
@@ -204,7 +204,7 @@
     animation-duration: 10s;
 }
 
-.circles li:nth-child(19){
+/* .circles li:nth-child(19){
     opacity: 0;
     left: 100%;
     top: 60%;
@@ -232,7 +232,7 @@
     width: 80px;
     height: 80px;
     animation-delay: 3s;
-}
+} */
 
 
 .circles li:nth-child(22){
@@ -273,7 +273,7 @@
     animation-delay: 7s;
 }
 
-.circles li:nth-child(26){
+/* .circles li:nth-child(26){
     opacity: 0;
     left: 95%;
     top: 30%;
@@ -299,7 +299,7 @@
     height: 25px;
     animation-delay: 4s;
     animation-duration: 25s;
-}
+} */
 
 .circles li:nth-child(29){
     opacity: 0;
@@ -330,7 +330,7 @@
 }
 
 
-.circles li:nth-child(32){
+/* .circles li:nth-child(32){
     opacity: 0;
     left: 10%;
     width: 20px;
@@ -354,7 +354,7 @@
     height: 50px;
     animation-delay: 0s;
     animation-duration: 18s;
-}
+} */
 
 .circles li:nth-child(35){
     opacity: 0;
