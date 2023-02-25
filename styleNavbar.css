@@ -117,7 +117,7 @@
 
     label .hamburger:after { bottom: -10px; }
 
-    label input { display: none; }
+    label input { display: none; border-radius: 50%;}
 
     label input:checked + .menu {
     box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
