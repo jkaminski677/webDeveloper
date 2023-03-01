@@ -130,33 +130,62 @@ function checkForm() {
 // }
 
 let box0 = document.querySelector("#InstartTitle");
-let box1 = document.querySelector("#StartClass");
-let box2 = document.querySelector("#SibUnder");
+let box1 = document.querySelector("#LeftInstartdown");
+let box2 = document.querySelector("#SibUnderH3");
+let box3 = document.querySelector("#ContactH3");
 
-let interval0 = setInterval(() => {box1.getBoundingClientRect().top >= -1 ? changeClass0() : null}, 400);
+// let interval0 = setInterval(() => {box1.getBoundingClientRect().top >= -1 ? changeClass0() : null}, 400);
 
-function changeClass0() {box0.style.opacity = "1"; box2.style.opacity="1";clearInterval(interval0);}
+// function changeClass0() {
+//     box0.style.animation = "animateleft 1.3s ease-out"
+//     box2.style.animation = "animateleft 1.4s ease-out"
+//     box0.style.left = "0"; 
+//     box2.style.left = "0"; 
+//     box0.style.opacity = "1";
+//     box2.style.opacity="1";
+//     clearInterval(interval0);
+// }
 
-let interval = setInterval(() => {box1.getBoundingClientRect().bottom <= 1000 ? changeClass() : null}, 400);
+// let interval = setInterval(() => {box1.getBoundingClientRect().bottom <= 1000 ? changeClass() : null}, 400);
 
-function changeClass() {
-    box1.firstElementChild.classList.add("w3-animate-left");
-    box1.style.opacity = "1";
-    clearInterval(interval);
-}
+// function changeClass() {
+//     box1.firstElementChild.classList.add("w3-animate-left");
+//     box1.style.opacity = "1";
+//     clearInterval(interval);
+// }
+
+// let interval1 = setInterval(() => {box3.getBoundingClientRect().bottom <= 100 ? changeClass1() : null}, 400);
+
+// function changeClass1() {box1.firstElementChild.classList.add("w3-animate-right"); box1.style.opacity = "1"; clearInterval(interval1);
+// }
+
 
 setTimeout(function() {
-    let b1 = document.getElementById("InstartTitle");
-    b1.style.display = "flex";
-    b1.style.animation = "animateleft 1.3s ease-out"
-}, 250);
+    box0.style.animation = "animateleft 1.0s ease-out";
+    box0.style.left = "0"; 
+}, 350);
 setTimeout(function() {
-    let b1 = document.getElementById("SibUnder")
-    b1.style.display = "flex"; 
-    b1.style.animation = "animateleft 1.4s ease-out"
-}, 450);
+    box2.style.animation = "animateleft 1.0s ease-out";
+    box2.style.left = "0"; 
+}, 2850);
 setTimeout(function() {
-    let b1 = document.getElementById("LeftInstartdown")
-    b1.style.display = "flex"; 
-    b1.style.animation = "animateright 1.9s ease-out"
-}, 450);
+    box1.style.animation = "animateright 1.0s ease-out";
+    box1.style.right = "0"; 
+}, 3450);
+// setTimeout(function() {
+//     let b1 = document.getElementById("LeftInstartdown")
+//     b1.style.display = "flex"; 
+//     // b1.style.opacity = "1";
+//     b1.style.animation = "animateright 1.9s ease-out"
+// }, 450);
+
+const scrollElements = document.querySelectorAll(".LeftIcons");
+setTimeout(() => { 
+    scrollElements.forEach((el, i) => {
+        setTimeout(() => {
+            el.style.animation = "animateleft .7s ease-out"; 
+            el.style.left = "0";
+        }, i* 700)
+    })
+}, 900)
+
