@@ -252,7 +252,7 @@ body {
 
 .SibUnder {
     /* border: 2px solid peru; */
-    width: 50%;
+    /* width: 50%; */
     height: 100%;
     z-index: 1;
     position: relative;
@@ -262,12 +262,44 @@ body {
     display: none;
     flex-direction: column;
     line-height: 2.1em;
+    width: 60%;
+}
+
+.beterweb {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#SibUnder h3 {
+    letter-spacing: 6px;
+    text-align: left;
+}
+
+.LeftIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.LeftIcons p {
+    margin: 10px;
+}
+
+.lesticon {
+    width: 60px;
 }
 
 
 .leftinstartdown {
     position: relative;
     display: none;
+    width: 40%;
 }
 
 .mon {
@@ -436,19 +468,49 @@ body {
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
     .instartdown{
         flex-direction: column;
     }
-    .SibUnder {
-        width: 80%;
+    .leftinstartdown {
+        width: 100%;
+        margin-top: 50px;
+    }
+    #SibUnder{
+        width: 100%;
     }
     .startclass{
         margin-top: 150px;
     }
+    .LeftIcons p {
+        margin: 10px;
+    }
+    
   }
 
   @media screen and (max-width: 600px) {
+    .LeftIcons p {
+        margin: 0;
+    }
+    .beterweb {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid peru; */
+    }
+
+    .LeftIcons {
+        /* flex-direction: row; */
+        /* align-items: flex-start; */
+        /* border: 2px solid peru; */
+        margin-top: 10px;
+    }
+
+    .lesticon {
+        margin-bottom: 10px;
+    }
+    
     .leftinstartdown {
         margin-left: -20px;
     }
