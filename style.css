@@ -488,7 +488,10 @@ body {
         width: 100%;
     }
     .startclass{
-        margin-top: 150px;
+        margin: 0px;
+    }
+    .beterweb {
+        margin: 10px 0 0 0;
     }
     .LeftIcons p {
         margin: 10px;
@@ -627,6 +630,8 @@ body {
     letter-spacing: 10px;
     width: 90%;
     /* border: 2px solid peru; */
+    position: relative;
+    left: -800px;
 }
 
 
@@ -652,6 +657,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
+    left: -1300px;
 }
 
 .contactPics p {
@@ -735,6 +742,8 @@ form {
     border-radius: 10px;
     z-index: 10;
     margin: 20px 0 20px 0;
+    position: relative;
+    right: -1500px;
 }
 
 

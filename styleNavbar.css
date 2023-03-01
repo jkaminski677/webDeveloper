@@ -122,7 +122,6 @@
     label input:checked + .menu {
     box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
     border-radius: 50%;
-    /* z-index: 190; */
     }
 
     label input:checked + .menu .hamburger {
@@ -135,15 +134,15 @@
     -webkit-transform: rotate(0deg);
     transform: rotate(90deg);
     bottom: 0;
-    
     }
 
     label input:checked + .menu .hamburger:before {
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
     top: 0;
-    
     }
+
+        
 
     label input:checked + .menu + ul { 
         /* display: block;  */
@@ -151,6 +150,7 @@
         top: 40%;  
         left: 50%;  
     }
+
 
     label ul {
     z-index: 200;

@@ -77,7 +77,7 @@ function checkForm() {
 }
 
 
-// Wysyłąnie maili za pomocą https://www.emailjs.com/ (200 na miesiąc)
+// Wysyłanie maili za pomocą https://www.emailjs.com/ (200 na miesiąc)
 // function sendMail() {
 //     var params = {
 //         name: document.getElementById("Name").value,
@@ -133,59 +133,111 @@ let box0 = document.querySelector("#InstartTitle");
 let box1 = document.querySelector("#LeftInstartdown");
 let box2 = document.querySelector("#SibUnderH3");
 let box3 = document.querySelector("#ContactH3");
-
-// let interval0 = setInterval(() => {box1.getBoundingClientRect().top >= -1 ? changeClass0() : null}, 400);
-
-// function changeClass0() {
-//     box0.style.animation = "animateleft 1.3s ease-out"
-//     box2.style.animation = "animateleft 1.4s ease-out"
-//     box0.style.left = "0"; 
-//     box2.style.left = "0"; 
-//     box0.style.opacity = "1";
-//     box2.style.opacity="1";
-//     clearInterval(interval0);
-// }
-
-// let interval = setInterval(() => {box1.getBoundingClientRect().bottom <= 1000 ? changeClass() : null}, 400);
-
-// function changeClass() {
-//     box1.firstElementChild.classList.add("w3-animate-left");
-//     box1.style.opacity = "1";
-//     clearInterval(interval);
-// }
-
-// let interval1 = setInterval(() => {box3.getBoundingClientRect().bottom <= 100 ? changeClass1() : null}, 400);
-
-// function changeClass1() {box1.firstElementChild.classList.add("w3-animate-right"); box1.style.opacity = "1"; clearInterval(interval1);
-// }
+let box4 = document.querySelector(".contactPics")
+let box5 = document.querySelector(".formula")
 
 
-setTimeout(function() {
-    box0.style.animation = "animateleft 1.0s ease-out";
-    box0.style.left = "0"; 
-}, 350);
-setTimeout(function() {
-    box2.style.animation = "animateleft 1.0s ease-out";
-    box2.style.left = "0"; 
-}, 2850);
-setTimeout(function() {
-    box1.style.animation = "animateright 1.0s ease-out";
-    box1.style.right = "0"; 
-}, 3450);
-// setTimeout(function() {
-//     let b1 = document.getElementById("LeftInstartdown")
-//     b1.style.display = "flex"; 
-//     // b1.style.opacity = "1";
-//     b1.style.animation = "animateright 1.9s ease-out"
-// }, 450);
 
-const scrollElements = document.querySelectorAll(".LeftIcons");
-setTimeout(() => { 
-    scrollElements.forEach((el, i) => {
-        setTimeout(() => {
-            el.style.animation = "animateleft .7s ease-out"; 
-            el.style.left = "0";
-        }, i* 700)
-    })
-}, 900)
+if (window.screen.width < 1000) {
+    let interval11 = setInterval(() => {
+        box0.getBoundingClientRect().bottom <= 600 ? changeClass11() : null;
+    }, 400);
+    
+    function changeClass11() {
+        WebDevView();
+        clearInterval(interval11);
+        ViewQuestBox();
+    }
 
+    let interval12 = setInterval(() => {
+        box2.getBoundingClientRect().bottom <= 800 ? changeClass12() : null;
+    }, 400);
+    
+    function changeClass12() {
+        clearInterval(interval12);
+        box2.style.animation = "animateleft 1.0s ease-out";
+        box2.style.left = "0"; 
+    }
+
+    let interval13 = setInterval(() => {
+        box1.getBoundingClientRect().bottom <= 950 ? changeClass13() : null;
+        // console.log(box1.getBoundingClientRect().bottom);
+    }, 400);
+    
+    function changeClass13() {
+        clearInterval(interval13);
+        box1.style.animation = "animateright 1.0s ease-out";
+        box1.style.right = "0"; 
+    }
+
+ }
+ else {
+    ViewQuestBox();
+    WebDevView();
+    LeftInstartDownView();
+    SieUnH3View();    
+    
+ }
+
+
+
+ 
+// ///  Contact slider
+
+let interval = setInterval(() => {box3.getBoundingClientRect().bottom <= 900 ? changeClass() : null;}, 400);
+
+function changeClass() {
+    box3.style.animation = "animateleft .8s ease-out";
+    box3.style.left = "0"; 
+    clearInterval(interval);
+}
+
+let interval1 = setInterval(() => {box4.getBoundingClientRect().bottom <= 900 ? changeClass1() : null;}, 400);
+
+function changeClass1() {
+    box4.style.animation = "animateleft .8s ease-out";
+    box4.style.left = "0"; 
+    clearInterval(interval1);
+}
+
+let interval2 = setInterval(() => {box5.getBoundingClientRect().bottom <= 1200 ? changeClass2() : null;}, 400);
+
+function changeClass2() {
+    box5.style.animation = "animateright .8s ease-out";
+    box5.style.right = "0"; 
+    clearInterval(interval2);
+}
+
+
+// /// END Contact slider
+
+function ViewQuestBox() {
+    let scrollElements = document.querySelectorAll(".LeftIcons");
+    setTimeout(() => { 
+        scrollElements.forEach((el, i) => {
+            setTimeout(() => {
+                el.style.animation = "animateleft .7s ease-out"; 
+                el.style.left = "0";
+            }, i* 700)
+        })
+    }, 900)
+}
+
+function WebDevView() {
+    setTimeout(function() {
+        box0.style.animation = "animateleft 1.0s ease-out";
+        box0.style.left = "0"; 
+    }, 350);
+}
+function SieUnH3View() {
+    setTimeout(function() {
+        box2.style.animation = "animateleft 1.0s ease-out";
+        box2.style.left = "0"; 
+    }, 2850);
+}
+function LeftInstartDownView() {
+    setTimeout(function() {
+        box1.style.animation = "animateright 1.0s ease-out";
+        box1.style.right = "0"; 
+    }, 3450);
+}
