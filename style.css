@@ -21,7 +21,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     /* font-family: 'Work Sans', sans-serif; */
     font-family: 'Raleway', sans-serif;
@@ -171,9 +171,6 @@ body {
     width: 100%;
     height: auto;
     /* border: 2px solid peru; */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,23 +178,6 @@ body {
     margin: 60px 0 30px 0;
 }
 
-#StartClass{
-    position:relative;
-    /* left: -2000px; */
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 60px 0 30px 0;
-    /* transition: .5s ease-in-out; */
-    margin-top: 50px;
-    /* border: 2px solid peru; */
-}
 
 .w3-animate-left {
     position: relative;
@@ -227,11 +207,11 @@ body {
 
 .instartTitle {
     /* border: 2px solid peru; */
-    display: block;
     position: relative;
-    left: 0px;
     width: 90%;
     left: -800px;
+    margin-top: -40px;
+    margin-bottom: -20px;
 }
 .instartTitle h3 {
     font-size: 40px;
@@ -259,6 +239,7 @@ body {
     flex-direction: column;
     line-height: 2.1em;
     width: 60%;
+    /* border: 2px solid peru; */
 }
 
 #SibUnderH3{
@@ -267,7 +248,7 @@ body {
     letter-spacing: 6px;
     width: 70%;
     font-size: 25px;
-    margin: 30px 0 0 0;
+    margin: 80px 0 0 0;
     text-align: center;
     /* border: 2px solid peru; */
 }
@@ -277,7 +258,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 80px;
+    /* border: 2px solid peru; */
 }
 
 .LeftIcons {
@@ -285,18 +267,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin: 0 50px 20px 0;
     text-align: center;
     position: relative;
     left: -1800px;
+    /* border: 2px solid peru; */
 }
 
 .LeftIcons p {
     margin: 10px;
+    /* border: 2px solid peru; */
 }
 
 .lesticon {
     width: 60px;
+    /* border: 2px solid peru; */
 }
 
 
@@ -469,7 +455,7 @@ body {
     100% { transform: perspective(800px) rotateY(35deg) scale(0.9) rotateX(8deg) translateY(-10px) rotateZ(1deg)}    
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1700px) {
     .leftinstartdown{
         margin-right: -45px;
     }
@@ -486,20 +472,33 @@ body {
     }
     #SibUnder{
         width: 100%;
+        /* border: 2px solid peru; */
     }
     .startclass{
         margin: 0px;
     }
     .beterweb {
+        width: 100%;
         margin: 10px 0 0 0;
+        /* border: 2px solid peru; */
     }
     .LeftIcons p {
         margin: 10px;
+        /* border: 2px solid peru; */
+    }
+    .LeftIcons {
+        margin: 0;
+    }
+    .instartTitle {
+        margin-bottom: 0px;
     }
     
   }
 
   @media screen and (max-width: 600px) {
+    .instartTitle {
+        margin-bottom: -10px;
+    }
     .LeftIcons p {
         margin: 0;
     }
@@ -604,6 +603,121 @@ body {
 
 
 
+.aboutClass {
+    /* border: 2px solid peru; */
+    margin: 120px 0 120px 0;
+    width: 100%;
+}
+
+#BuidiH3 {
+    /* border: 2px solid peru; */
+    display: block;
+    position: relative;
+    left: 0px;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#BuidiH3 h3{
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 8px;
+    width: 80%;
+    /* border: 2px solid peru; */
+    text-align: right;
+    align-self: center; 
+}
+
+#BuidiH3 b {
+    font-weight: 900;
+}
+
+.inAboutclass {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.photoClass  {
+    width: 40%;
+}
+
+.photoClass img {
+    width: 300px;
+    /* border-radius: 50%; */
+}
+
+.descripClass {
+    width: 60%;
+}
+
+.aboutIcons {
+    /* border: 2px solid peru; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.inAbIco {
+    /* border: 2px solid peru;  */
+    margin: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.iconsInAbout {
+    width: 70px;
+}
+
+.photoClass img {
+    --g: 4px;     /* the gap */
+    --b: 12px;    /* border thickness*/
+    --c: #669706; /* the color */
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .3s;
+  }
+.photoClass img:hover {
+    --_p: 75%;
+    filter: grayscale(20%);
+}
+
+/* @media screen and (max-width: 1500px) {
+    .iconsInAbout {
+        width: 30%;
+    }
+} */
+
+
+@media screen and (max-width: 1100px) {
+    .aboutIcons {
+        /* border: 2px solid peru; */
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 25% 25% 25%;
+    }
+    .inAbIco {
+        /* border: 2px solid peru;  */
+        margin: 30px;
+    }
+}
+
 
 
 /* /////////////////////////////////// Contact form //////////////////////////////////////////// */
@@ -616,7 +730,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 30px;
     /* border: 2px solid peru; */
 }
 
