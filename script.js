@@ -23,6 +23,7 @@ function checkForm() {
     tel = document.getElementById("phone").value;
     mail = document.getElementById("email").value;
     mes = document.getElementById("message").value;
+    let myForm = document.getElementById("my_form");
     monkey = "@";
     let numerator = 0
 
@@ -68,10 +69,12 @@ function checkForm() {
 
     if (numerator == 5) {
         // sendMail();
+        myForm.reset();
         document.getElementById("messageSend").style.display = "block"
         console.log("Wysłano!")
-        // console.log(numerator)
-
+    }
+    else{
+        document.getElementById("messageSend").style.display = "none"
     }
     
 }
