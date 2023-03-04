@@ -808,6 +808,7 @@ body {
 .inTechClass {
     /* border: 2px solid peru; */
     width: 90%;
+    height: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -837,10 +838,13 @@ body {
     .inTechClass {
         display: grid;
         grid-template-columns: 33% 33% 33%;
-        grid-template-rows: 33% 33% 33%;
+        grid-template-rows: 50% 50%;
     }
     .imgtechSize {
-        margin: 0 30px 30px 30px;
+        margin: 50px 30px 30px 0;
+    }
+    .inTechClass {
+        margin: 20px 0 30px 0;
     }
 
 }
@@ -860,7 +864,10 @@ body {
     .inTechClass {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
+    }
+    .imgtechSize {
+        margin: 10px 30px 30px 30px;
     }
 }
 
@@ -868,7 +875,7 @@ body {
     .inTechClass {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-rows: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
     }
     .imgtechSize {
         margin: 30px 0 30px 0;
