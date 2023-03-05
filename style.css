@@ -688,11 +688,11 @@ body {
 .photoClass img {
     --g: 4px;     /* the gap */
     --b: 12px;    /* border thickness*/
-    --c: #b96900; /* the color */
+    --c: #e0775c; /* the color */
     
     
     padding: calc(var(--g) + var(--b));
-    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_c: #ffffff00 0 25%, var(--c) 0 50%;
     --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
     --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
     background:
@@ -1018,8 +1018,8 @@ body {
         rotateY(20deg) scale(0.9)
         rotateX(5deg);
     filter: blur(1px);
-    opacity: 0.7;
-    transition: 0.6s ease all;
+    opacity: 0.9;
+    transition: 0.4s ease all;
 }
 
 
