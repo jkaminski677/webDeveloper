@@ -73,7 +73,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     z-index: 1;
 }
 
@@ -463,6 +463,10 @@ body {
 
 
 @media screen and (max-width: 1000px) {
+    .HelloHeader {
+        margin-top: -30px;
+    }
+    
     .instartdown{
         flex-direction: column;
     }

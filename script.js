@@ -159,12 +159,20 @@ let box5 = document.querySelector(".formula")
 
 window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.querySelector(".header").style.padding = "5px 2px";
-  } else {
-    document.querySelector(".header").style.padding = "20px 10px";
-  }
+if (window.screen.width > 1000) {
+    function scrollFunction() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.querySelector(".nav-link").style.width = "100px";
+        document.querySelector(".header").style.padding = "15px 2px";
+        document.querySelector(".header").style.height = "30px";
+        
+
+    } else {
+        document.querySelector(".header").style.padding = "20px 10px";
+        document.querySelector(".header").style.height = "30px";
+        document.querySelector(".nav-link").style.width = "130px";
+    }
+    }
 }
 
 
