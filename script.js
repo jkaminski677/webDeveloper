@@ -157,6 +157,15 @@ let box3 = document.querySelector("#ContactH3");
 let box4 = document.querySelector(".contactPics")
 let box5 = document.querySelector(".formula")
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.querySelector(".header").style.padding = "5px 2px";
+  } else {
+    document.querySelector(".header").style.padding = "20px 10px";
+  }
+}
 
 
 if (window.screen.width < 1000) {
