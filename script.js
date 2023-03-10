@@ -86,7 +86,7 @@ function checkForm() {
     }
 
     if (numerator == 5) {
-        // sendMail();
+        sendMail();
         myForm.reset();
         document.getElementById("messageSend").style.display = "block"
         console.log("Wysłano!")
@@ -124,31 +124,31 @@ function checkForm() {
 // }
 
 
-//  Wysyłanie maili za pomocą smptjs.com (100 na dzień)
-// function sendMail(){
-//     let ebody = `
-//     <b>Name: </b>${Name.value}
-//     <br>
-//     <b>Email: </b>${email.value}
-//     <br>
-//     <b>Phone: </b>${phone.value}
-//     <br>
-//     <br>
-//     <b>Message:</b>${message.value}
-//     `
-//     const sub = "smtp.js webDeveloper - "
+//  Wysyłanie maili za pomocą smtpjs.com (100 na dzień) (app.elasticemail.com)
+function sendMail(){
+    let ebody = `
+    <b>Name: </b>${Name.value}
+    <br>
+    <b>Email: </b>${email.value}
+    <br>
+    <b>Phone: </b>${phone.value}
+    <br>
+    <br>
+    <b>Message:</b>${message.value}
+    `
+    const sub = " - smtp.js webDeveloper "
 
-//     Email.send({
-//         SecureToken : "602e71cf-de3c-4a73-a18a-21bf392e8bf8",
-//         To : 'wladekskaj17@gmail.com',
-//         From : "wladekskaj17@gmail.com",
-//         Subject : sub + email.value,
-//         Body : ebody
-//     }).then(
-//       message => console.log(message)
-//     );
+    Email.send({
+        SecureToken : "602e71cf-de3c-4a73-a18a-21bf392e8bf8",
+        To : 'wladekskaj17@gmail.com',
+        From : "wladekskaj17@gmail.com",
+        Subject : email.value + sub,
+        Body : ebody
+    }).then(
+      message => console.log(message)
+    );
 
-// }
+}
 
 let box0 = document.querySelector("#InstartTitle");
 let box1 = document.querySelector("#LeftInstartdown");
