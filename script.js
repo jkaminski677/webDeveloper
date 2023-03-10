@@ -134,7 +134,7 @@ function sendMail(){
     <b>Phone: </b>${phone.value}
     <br>
     <br>
-    <b>Message:</b>${message.value}
+    <b>Message: </b> <br><br>${message.value}
     `
     const sub = " - smtp.js webDeveloper "
 
