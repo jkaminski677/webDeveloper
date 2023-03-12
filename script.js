@@ -156,6 +156,11 @@ let box2 = document.querySelector("#SibUnderH3");
 let box3 = document.querySelector("#ContactH3");
 let box4 = document.querySelector(".contactPics")
 let box5 = document.querySelector(".formula")
+let box6 = document.querySelector("#BuidiH3")
+let box7 = document.querySelector(".photoClass")
+let box8 = document.querySelector("#techH3")
+let box9 = document.querySelector("#portH3")
+
 
 window.onscroll = function() {scrollFunction()};
 
@@ -218,6 +223,83 @@ if (window.screen.width < 1000) {
  }
 
 
+ let interval106 = setInterval(() => {box6.getBoundingClientRect().top <= 800 ? changeClass106() : null;}, 400);
+
+ function changeClass106() {
+     box6.style.animation = "animateright .6s ease-out";
+     box6.style.right = "0"; 
+     clearInterval(interval106);
+ }
+ 
+ let interval107 = setInterval(() => {box7.getBoundingClientRect().top <= 800 ? changeClass107() : null;}, 400);
+
+ function changeClass107() {
+    box7.style.animation = "animateleft .6s ease-out";
+    box7.style.left = "0";  
+     clearInterval(interval107);
+ }
+
+ let interval110 = setInterval(() => {box6.getBoundingClientRect().top <= 500 ? ViewQuestBox1() : null;}, 400);
+
+ function ViewQuestBox1() {
+    let scrollElements = document.querySelectorAll(".inAbIco");
+    setTimeout(() => { 
+        scrollElements.forEach((el, i) => {
+            setTimeout(() => {
+                el.style.animation = "animateright .6s ease-out"; 
+                el.style.right = "0";
+            }, i* 400)
+        })
+    }, 0)
+}
+
+let interval108 = setInterval(() => {box8.getBoundingClientRect().top <= 800 ? changeClass108() : null;}, 400);
+
+function changeClass108() {
+   box8.style.animation = "animateleft .6s ease-out";
+   box8.style.left = "0";  
+    clearInterval(interval108);
+}
+
+
+let interval120 = setInterval(() => {box8.getBoundingClientRect().top <= 550 ? ViewQuestBox2() : null;}, 400);
+
+function ViewQuestBox2() {
+   let scrollElements = document.querySelectorAll(".imgtechSize");
+   setTimeout(() => { 
+       scrollElements.forEach((el, i) => {
+           setTimeout(() => {
+               el.style.animation = "animateright .6s ease-out"; 
+               el.style.right = "0";
+           }, i* 400)
+       })
+   }, 0)
+}
+
+
+let interval109 = setInterval(() => {box9.getBoundingClientRect().top <= 800 ? changeClass109() : null;}, 400);
+
+function changeClass109() {
+   box9.style.animation = "animateright .6s ease-out";
+   box9.style.right = "0";  
+    clearInterval(interval109);
+}
+
+
+let interval130 = setInterval(() => {box9.getBoundingClientRect().top <= 550 ? ViewQuestBox3() : null;}, 400);
+
+function ViewQuestBox3() {
+   let scrollElements = document.querySelectorAll(".webClassPort");
+   setTimeout(() => { 
+       scrollElements.forEach((el, i) => {
+           setTimeout(() => {
+               el.style.animation = "animateright .6s ease-out"; 
+               el.style.right = "0";
+           }, i* 400)
+       })
+   }, 0)
+}
+
 
  
 // ///  Contact slider
@@ -230,18 +312,18 @@ function changeClass() {
     clearInterval(interval);
 }
 
-let interval1 = setInterval(() => {box4.getBoundingClientRect().bottom <= 900 ? changeClass1() : null;}, 400);
+let interval1 = setInterval(() => {box4.getBoundingClientRect().bottom <= 1100 ? changeClass1() : null;}, 400);
 
 function changeClass1() {
-    box4.style.animation = "animateleft .8s ease-out";
+    box4.style.animation = "animateleft .6s ease-out";
     box4.style.left = "0"; 
     clearInterval(interval1);
 }
 
-let interval2 = setInterval(() => {box5.getBoundingClientRect().bottom <= 1200 ? changeClass2() : null;}, 400);
+let interval2 = setInterval(() => {box5.getBoundingClientRect().bottom <= 1300 ? changeClass2() : null;}, 400);
 
 function changeClass2() {
-    box5.style.animation = "animateright .8s ease-out";
+    box5.style.animation = "animateright .6s ease-out";
     box5.style.right = "0"; 
     clearInterval(interval2);
 }
@@ -254,30 +336,30 @@ function ViewQuestBox() {
     setTimeout(() => { 
         scrollElements.forEach((el, i) => {
             setTimeout(() => {
-                el.style.animation = "animateleft .7s ease-out"; 
+                el.style.animation = "animateleft .6s ease-out"; 
                 el.style.left = "0";
-            }, i* 700)
+            }, i* 600)
         })
     }, 900)
 }
 
 function WebDevView() {
     setTimeout(function() {
-        box0.style.animation = "animateleft 1.0s ease-out";
+        box0.style.animation = "animateleft .7s ease-out";
         box0.style.left = "0"; 
     }, 350);
 }
 function SieUnH3View() {
     setTimeout(function() {
-        box2.style.animation = "animateleft 1.0s ease-out";
+        box2.style.animation = "animateleft .7s ease-out";
         box2.style.left = "0"; 
-    }, 2850);
+    }, 2350);
 }
 function LeftInstartDownView() {
     setTimeout(function() {
-        box1.style.animation = "animateright 1.0s ease-out";
+        box1.style.animation = "animateright .7s ease-out";
         box1.style.right = "0"; 
-    }, 3450);
+    }, 350);
 }
 
 
