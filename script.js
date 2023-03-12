@@ -162,9 +162,8 @@ let box8 = document.querySelector("#techH3")
 let box9 = document.querySelector("#portH3")
 
 
-window.onscroll = function() {scrollFunction()};
-
 if (window.screen.width > 1000) {
+    window.onscroll = function() {scrollFunction()};
     function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.querySelector(".nav-link").style.width = "100px";
