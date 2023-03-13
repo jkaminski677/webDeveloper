@@ -308,6 +308,7 @@ body {
 .gdicon {
     /* transform: perspective(800px) rotateY(27deg) scale(0.9) rotateX(8deg); */
     width: 264px;
+    height: auto;
     /* border: 2px solid peru; */
     /* box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 70px -18px; */
     animation: float 3s infinite ease-in-out;
@@ -321,6 +322,7 @@ body {
 .anicon {
     /* transform: perspective(800px) rotateY(30deg) scale(0.9) rotateX(8deg); */
     width: 94px;
+    height: auto;
     box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 30px -18px;
     animation-name: float;
     animation-delay: 0.5s;
@@ -337,6 +339,7 @@ body {
 .picicon {
     /* transform: perspective(800px) rotateY(34deg) scale(0.9) rotateX(9deg); */
     width: 84px;
+    height: auto;
     box-shadow: rgba(0, 0, 0, 0.25) -15px 15px 30px -8px;
     /* border: 2px solid rgb(255, 151, 151); */
     animation: float2 3s 0.2s infinite ease-in-out;
@@ -350,6 +353,7 @@ body {
 .smicon {
     /* transform: perspective(800px) rotateY(32deg) scale(0.9) rotateX(9deg); */
     width: 84px;
+    height: auto;
     box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 30px -22px;
     /* border: 2px solid peru; */
     animation: float 3s 0.7s infinite ease-in-out;
@@ -366,6 +370,7 @@ body {
 .chicon {
     /* transform: perspective(800px) rotateY(32deg) scale(0.9) rotateX(9deg); */
     width: 64px;
+    height: auto;
     /* border: 2px solid peru; */
     animation: float 3s 0.7s infinite ease-in-out;
     position: relative;
@@ -377,6 +382,7 @@ body {
 .bcicon {
     /* transform: perspective(800px) rotateY(32deg) scale(0.9) rotateX(9deg); */
     width: 50px;
+    height: auto;
     box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 30px -22px;
     /* border: 2px solid peru; */
     animation: float 3s 0.3s infinite ease-in-out;
@@ -391,6 +397,7 @@ body {
 .scicon {
     /* transform: perspective(800px) rotateY(32deg) scale(0.9) rotateX(9deg); */
     width: 110px;
+    height: auto;
     box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 30px -22px;
     /* border: 2px solid peru; */
     animation: float3 3s 0.2s infinite ease-in-out;
@@ -405,6 +412,7 @@ body {
 .busicon{ 
     /* transform: perspective(800px) rotateY(32deg) scale(0.9) rotateX(9deg); */
     width: 70px;
+    height: auto;
     box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 30px -22px;
     /* border: 2px solid peru; */
     animation: float2 3s 0.4s infinite ease-in-out;
@@ -420,6 +428,7 @@ body {
 .woicon {
     /* transform: perspective(800px) rotateY(32deg) scale(0.9) rotateX(9deg); */
     width: 74px;
+    height: auto;
     /* border: 2px solid peru; */
     box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 30px -22px;
     animation: float 3s 0.3s infinite ease-in-out;
@@ -653,6 +662,7 @@ body {
 
 .photoClass img {
     width: 300px;
+    height: auto;
     /* border-radius: 50%; */
 }
 
@@ -689,7 +699,7 @@ body {
 
 .iconsInAbout {
     width: 70px;
-
+    height: auto;
 }
 
 .photoClass {
@@ -845,6 +855,7 @@ body {
 
 .imgtechSize img {
     width: 90px;
+    height: auto;
     transform: perspective(1500px) rotateY(20deg) scale(0.99);
     /* border-radius: 1rem; */
     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px; */
@@ -1031,6 +1042,7 @@ body {
 
 .ainWebPor img {
     max-width: 400px;
+    height: auto;
     box-shadow: rgba(0, 0, 0, 0.25) -25px 25px 30px -18px;
     transform:
         perspective(800px)
@@ -1264,6 +1276,7 @@ body {
 
 .facebok_icon {
     width: 64px;
+    height: auto;
     transition: 0.2s;
     /* border: 2px solid peru; */
     filter: invert(50%) sepia(51%) saturate(551%) hue-rotate(325deg) brightness(101%) contrast(86%);
@@ -1279,6 +1292,7 @@ body {
 
 .github_icon {
     width: 64px;
+    height: auto;
     transition: 0.2s;
     /* border: 2px solid peru; */
     filter: invert(50%) sepia(51%) saturate(551%) hue-rotate(325deg) brightness(101%) contrast(86%);
