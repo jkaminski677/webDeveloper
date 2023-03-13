@@ -1409,23 +1409,25 @@ form button:active {
         margin-left: 0px;
     }
 
-  }
+}
 
-  @media screen and (max-width: 400px) { 
-    .container h3{
-        letter-spacing: 5px;
-        font-size: 35px;
-    }
+@media screen and (max-width: 400px) { 
+  .container h3{
+      letter-spacing: 5px;
+      font-size: 35px;
   }
+}
 
 
 
   /* ////////////////  END Contact form ///////////////////////// */
 
 
+
   /* ////////////////  NAVBAR ///////////////////////// */
 
-  .header li {
+
+.header li {
     list-style: none;
 }
 
