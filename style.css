@@ -185,7 +185,7 @@ body {
 
 @keyframes animateleft
 {
-    from {left:-1400px;} 
+    from {left:-3900px;} 
     to{left:0;}
 }
 
@@ -199,9 +199,67 @@ body {
 }
 @keyframes animateright
 {
-    from {right:-1800px;opacity:0} 
+    from {right:-3500px;opacity:0} 
     to{right:0;opacity:1}
 }
+
+@media screen and (max-width: 2600px) {
+    @keyframes animateright
+    {
+        from {right:-2900px;opacity:0} 
+        to{right:0;opacity:1}
+    }
+        
+    @keyframes animateleft
+    {
+        from {left:-2400px;} 
+        to{left:0;}
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    @keyframes animateright
+    {
+        from {right:-1800px;opacity:0} 
+        to{right:0;opacity:1}
+    }
+        
+    @keyframes animateleft
+    {
+        from {left:-1400px;} 
+        to{left:0;}
+    }
+}
+
+@media screen and (max-width: 600px) {
+    @keyframes animateright
+    {
+        from {right:-700px;opacity:0} 
+        to{right:0;opacity:1}
+    }
+    
+    @keyframes animateleft
+    {
+        from {left:-700px;} 
+        to{left:0;}
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    @keyframes animateright
+    {
+        from {right:-500px;opacity:0} 
+        to{right:0;opacity:1}
+    }
+    
+    @keyframes animateleft
+    {
+        from {left:-500px;} 
+        to{left:0;}
+    }
+}
+
 
 
 .instartTitle {
